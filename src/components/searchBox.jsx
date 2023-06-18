@@ -8,7 +8,6 @@ export default function SearchBox(props) {
     const { searchResults, setSearchResults } = props
     const router = useRouter();
     function searchEvent() {
-        // console.count('called')
         let regex = new RegExp(searchValue, "gi")
         if (router?.asPath == '/bookmarkedUserPage') {
             bookmarkedUsers.map((item) => {
